@@ -975,22 +975,11 @@ function O({l:t,c:e,h:s}){let n=s*Math.PI/180,r=e*Math.cos(n),o=e*Math.sin(n),c=
      page and was retired on 17 Sep 2026; it is a redirect now. This page still
      carries no direct OS file links. ---- */
 
-  /* ---- Google Ads conversion on the way out to the download page.
-     It used to fire on download.html, which was the only page here with
-     a[download] links on it. That page is now a redirect, so the click to
-     harnessmd.com/download is the last thing we can see on our own site and it is
-     what the "Outbound click" conversion action is named for. NOTE this counts one
-     step earlier in the funnel than before: reaching the download page, not picking
-     an installer. The accurate fix is the same tag on harnessmd.com/download, which
-     lives in the server repo. Under Do Not Track the tag never loads and the gtag
-     call is a no-op. ---- */
-  (function () {
-    document.addEventListener('click', function (ev) {
-      var a = ev.target && ev.target.closest ? ev.target.closest('a[href^="https://harnessmd.com/download"]') : null;
-      if (!a) return;
-      gtag('event', 'conversion', { send_to: 'AW-18388216863/qnM3CI670_kcEJ_Yl8BE' });
-    }, true);
-  })();
+  /* ---- No Google Ads conversion fires on this page. It is reported on
+     harnessmd.com/download, at the click on an actual installer, which is the
+     only place that sees the thing we want to count. Firing it here as well, on
+     the way out, would report the same conversion action twice for one visit and
+     would credit anyone who left for the download page and never downloaded. ---- */
 
   /* ---- mobile nav: the burger turns into a cross and opens the link drawer ---- */
   (function () {
