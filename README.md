@@ -34,7 +34,7 @@ visualized as avatars at work on a shared office floor.
 
 <p>
   <a href="./LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-F4D35E.svg?style=flat-square&labelColor=6E1423"></a>
-  <a href="./CHANGELOG.md"><img alt="Version: 0.4.8" src="https://img.shields.io/badge/version-0.4.8-F4D35E.svg?style=flat-square&labelColor=6E1423"></a>
+  <a href="./CHANGELOG.md"><img alt="Version: 0.4.9" src="https://img.shields.io/badge/version-0.4.9-F4D35E.svg?style=flat-square&labelColor=6E1423"></a>
   <a href="https://github.com/Chafiq48/munder-difflin-community/releases"><img alt="Downloads across all releases" src="https://img.shields.io/github/downloads/Chafiq48/munder-difflin-community/total?style=flat-square&label=downloads&color=F4D35E&labelColor=6E1423"></a>
   <img alt="Status: pre-release" src="https://img.shields.io/badge/status-pre--release-F4F1EA.svg?style=flat-square&labelColor=6E1423">
   <img alt="Platform: macOS | Windows | Linux" src="https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-F4F1EA.svg?style=flat-square&labelColor=6E1423">
@@ -270,7 +270,7 @@ than sending you to a docs page.
 - **Prerequisites** — one Settings page showing which supporting tools (uv, git, Node, MemPalace, each agent CLI) you have, what each is for, and a button that asks Michael to install what is missing.
 
 > [!NOTE]
-> **Status: v0.4.8 Community, the first fork release with fork-owned updates and Muse Spark support.**
+> **Status: v0.4.9 Community, the first fork release with fork-owned updates and Muse Spark support.**
 > The interface now runs in Simplified Chinese and Arabic, with right to left support. English
 > stays the default and nothing changes until you pick a language in Settings, under General; the
 > app never reads your operating system locale. All three app fonts now ship inside the bundle
@@ -369,7 +369,7 @@ visual system.
 
 ## Roadmap
 
-Shipped through **v0.4.8 Community**: a Simplified Chinese and Arabic interface with right to left support
+Shipped through **v0.4.9 Community**: a Simplified Chinese and Arabic interface with right to left support
 and self-hosted fonts, twelve agent engines with BYOK keys and local LLMs, voice orchestration,
 the hive (memory · mailboxes · blackboard · event log), Command Center with kanban and weekday
 schedules, a built-in Monaco IDE with git rails, integrations registry + secret broker,

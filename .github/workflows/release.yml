@@ -57,6 +57,7 @@ jobs:
           POSTHOG_HOST: ${{ secrets.POSTHOG_HOST }}
 
       - name: Package installers
+        shell: bash
         # GH_TOKEN lets electron-builder skip its own publish; we upload via the
         # release step below for full control over the asset set.
         run: |
