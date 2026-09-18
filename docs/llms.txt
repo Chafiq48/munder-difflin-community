@@ -1,6 +1,6 @@
-# Munder Difflin
+# Munder Difflin Community
 
-> Munder Difflin gives you clones for you and your team, working 24/7. It is a free,
+> Munder Difflin Community gives you clones for you and your team, working 24/7. It is a free,
 > MIT-licensed, local-first multi-agent harness for CLI coding agents that turns Claude Code,
 > OpenAI Codex, Antigravity (Gemini), GitHub Copilot CLI, xAI Grok, Kimi Code, Qwen, OpenCode,
 > Crush, Gemini CLI, Cursor Agent, and pi.dev into a coordinated "office" of agents on
@@ -17,10 +17,10 @@
 
 ## Product
 
-- [Homepage](https://munderdiffl.in/): features, download links, FAQ
-- [GitHub repository](https://github.com/chaitanyagiri/munder-difflin): source, issues, releases
-- [Latest release](https://github.com/chaitanyagiri/munder-difflin/releases/latest): macOS dmg, Windows setup, Linux AppImage
-- [Changelog](https://github.com/chaitanyagiri/munder-difflin/blob/main/CHANGELOG.md)
+- [Community repository](https://github.com/Chafiq48/munder-difflin-community): source, features, downloads, and FAQ
+- [GitHub repository](https://github.com/Chafiq48/munder-difflin-community): source, issues, releases
+- [Latest release](https://github.com/Chafiq48/munder-difflin-community/releases/latest): macOS dmg, Windows setup, Linux AppImage
+- [Changelog](https://github.com/Chafiq48/munder-difflin-community/blob/main/CHANGELOG.md)
 
 ## Key guides
 

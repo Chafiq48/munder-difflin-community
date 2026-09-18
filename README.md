@@ -2,7 +2,7 @@
 
 <img src="./docs/logo.png" alt="Munder Difflin — agent harness to run an office of your clones" width="180">
 
-# Munder Difflin
+# Munder Difflin Community
 
 ### Agent harness to run an office of your clones
 
@@ -13,16 +13,20 @@
 
 <img src="./docs/media/floor.png" alt="The Munder Difflin office floor: agents at desks working in parallel, with the Command Center and a live agent terminal on the right" width="1240">
 
-**Free, open source and performant** — a multi-agent harness that works with the
+**Free, open source and local-first** — a community fork of Munder Difflin that works with the
 subscriptions you already pay for, on their hourly limits. It turns the terminal coding CLI
 you already run into a clone of you, one that keeps working while you're away and
 coordinates a whole office of agents on your own machine.
 
 Wraps [Claude Code](https://claude.com/claude-code), Antigravity (Gemini), OpenAI Codex,
 **xAI Grok**, **Kimi Code**, **Gemini CLI**, **Qwen**, **OpenCode**, **Crush**,
-**pi.dev**, **GitHub Copilot CLI**, and **Cursor** — with bring-your-own keys and local LLMs.
+**pi.dev**, **GitHub Copilot CLI**, **Cursor**, and **Muse Code / Muse Spark** — with bring-your-own keys and local LLMs.
 Agents that message, route, and remember, coordinated by **your clone** (Michael) and
 visualized as avatars at work on a shared office floor.
+
+> **Community fork:** the desktop app has no account requirement, paid tier, or remote
+> entitlement check. The CLI engines and model providers you choose may still require their
+> own login, subscription, API key, or usage charges; this fork does not make those providers free.
 
 <p>
   <em>Electron · React · TypeScript · Pixi.js · xterm.js · node-pty</em>
@@ -31,7 +35,7 @@ visualized as avatars at work on a shared office floor.
 <p>
   <a href="./LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-F4D35E.svg?style=flat-square&labelColor=6E1423"></a>
   <a href="./CHANGELOG.md"><img alt="Version: 0.4.6" src="https://img.shields.io/badge/version-0.4.6-F4D35E.svg?style=flat-square&labelColor=6E1423"></a>
-  <a href="https://github.com/chaitanyagiri/munder-difflin/releases"><img alt="Downloads across all releases" src="https://img.shields.io/github/downloads/chaitanyagiri/munder-difflin/total?style=flat-square&label=downloads&color=F4D35E&labelColor=6E1423"></a>
+  <a href="https://github.com/Chafiq48/munder-difflin-community/releases"><img alt="Downloads across all releases" src="https://img.shields.io/github/downloads/Chafiq48/munder-difflin-community/total?style=flat-square&label=downloads&color=F4D35E&labelColor=6E1423"></a>
   <img alt="Status: pre-release" src="https://img.shields.io/badge/status-pre--release-F4F1EA.svg?style=flat-square&labelColor=6E1423">
   <img alt="Platform: macOS | Windows | Linux" src="https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-F4F1EA.svg?style=flat-square&labelColor=6E1423">
   <a href="./CONTRIBUTING.md"><img alt="PRs welcome" src="https://img.shields.io/badge/PRs-welcome-F4D35E.svg?style=flat-square&labelColor=6E1423"></a>
@@ -42,13 +46,13 @@ visualized as avatars at work on a shared office floor.
 <br>
 
 <!-- Inline player renders on github.com (raw URL required; relative paths only link). -->
-<video src="https://github.com/chaitanyagiri/munder-difflin/raw/main/docs/media/hero.mp4" controls muted loop playsinline width="820">
-  <a href="https://github.com/chaitanyagiri/munder-difflin/raw/main/docs/media/hero.mp4">▶ Watch the floor — Munder Difflin running a hive of Claude Code agents</a>
+<video src="https://github.com/Chafiq48/munder-difflin-community/raw/main/docs/media/hero.mp4" controls muted loop playsinline width="820">
+  <a href="https://github.com/Chafiq48/munder-difflin-community/raw/main/docs/media/hero.mp4">▶ Watch the floor — Munder Difflin running a hive of CLI agents</a>
 </video>
 
 <br><br>
 
-**[⬇ Download for macOS, Windows or Linux](https://github.com/chaitanyagiri/munder-difflin/releases/latest)**
+**[⬇ Download for macOS, Windows or Linux](https://github.com/Chafiq48/munder-difflin-community/releases/latest)**
 
 <sub>macOS builds are signed and notarized. You do not need to build from source to use it.</sub>
 
@@ -97,6 +101,7 @@ can run here.
   <a href="https://pi.dev/docs/latest"><kbd>Pi</kbd></a>
   <a href="https://docs.github.com/copilot/concepts/agents/about-copilot-cli"><kbd>GitHub Copilot</kbd></a>
   <a href="https://cursor.com/docs/cli/install"><kbd>Cursor</kbd></a>
+  <a href="https://dev.meta.ai/"><kbd>Muse Code · Muse Spark</kbd></a>
   <kbd>+ any custom command</kbd>
 </p>
 
@@ -164,7 +169,7 @@ escalates the few things that actually need you.
 
 </td>
 <td width="50%">
-  <a href="https://github.com/chaitanyagiri/munder-difflin/raw/main/docs/media/demo/orchestrator.mp4"><img src="./docs/media/demo/orchestrator-poster.jpg" alt="Briefing Michael, the orchestrator agent, from the Command Center" width="100%"></a>
+  <a href="https://github.com/Chafiq48/munder-difflin-community/raw/main/docs/media/demo/orchestrator.mp4"><img src="./docs/media/demo/orchestrator-poster.jpg" alt="Briefing Michael, the orchestrator agent, from the Command Center" width="100%"></a>
 </td>
 </tr>
 <tr>
@@ -217,7 +222,7 @@ Click any desk to read that terminal live, and type straight back into it.
 
 </td>
 <td width="50%">
-  <a href="https://github.com/chaitanyagiri/munder-difflin/raw/main/docs/media/demo/agents.mp4"><img src="./docs/media/demo/agents-poster.jpg" alt="Agents working in parallel on the office floor" width="100%"></a>
+  <a href="https://github.com/Chafiq48/munder-difflin-community/raw/main/docs/media/demo/agents.mp4"><img src="./docs/media/demo/agents-poster.jpg" alt="Agents working in parallel on the office floor" width="100%"></a>
 </td>
 </tr>
 <tr>
@@ -230,13 +235,13 @@ than sending you to a docs page.
 
 </td>
 <td width="50%">
-  <a href="https://github.com/chaitanyagiri/munder-difflin/raw/main/docs/media/demo/setup.mp4"><img src="./docs/media/demo/setup-poster.jpg" alt="The first run setup wizard" width="100%"></a>
+  <a href="https://github.com/Chafiq48/munder-difflin-community/raw/main/docs/media/demo/setup.mp4"><img src="./docs/media/demo/setup-poster.jpg" alt="The first run setup wizard" width="100%"></a>
 </td>
 </tr>
 </table>
 
 **The floor**
-- **Every terminal is a real agent.** Claude Code, Antigravity (Gemini), OpenAI Codex, xAI Grok, Kimi Code, Gemini CLI, Qwen, OpenCode, Crush, pi.dev, GitHub Copilot CLI, Cursor, or a custom command — each in its own `node-pty` PTY, rendered with xterm.js.
+- **Every terminal is a real agent.** Claude Code, Antigravity (Gemini), OpenAI Codex, xAI Grok, Kimi Code, Gemini CLI, Qwen, OpenCode, Crush, pi.dev, GitHub Copilot CLI, Cursor, Muse Code / Muse Spark, or a custom command — each in its own `node-pty` PTY, rendered with xterm.js.
 - **Every agent is an avatar.** A Pixi.js office floor where agents walk to stations, envelopes fly desk to desk, and avatar state reflects real work.
 - **A GOD orchestrator you talk to.** It routes tasks, adjudicates traffic, and escalates only what needs a human. Or press **Talk** and run the floor by voice.
 - **Per-agent git worktrees.** Optional isolation so parallel agents never collide on branches.
@@ -287,7 +292,7 @@ than sending you to a docs page.
 > **If you're on 0.3.8, update:** that build's usage-limit guard never released the agents it held,
 > and it has been removed entirely.
 > macOS (signed & notarized), Windows, and Linux builds are on the
-> [releases page](https://github.com/chaitanyagiri/munder-difflin/releases/latest).
+> [releases page](https://github.com/Chafiq48/munder-difflin-community/releases/latest).
 
 <div align="right">(<a href="#munder-difflin">↑ back to top</a>)</div>
 
@@ -296,7 +301,7 @@ than sending you to a docs page.
 ### Download the app
 
 **Most people want this one.** Signed and notarized macOS builds, plus Windows and Linux, are on
-the [latest release](https://github.com/chaitanyagiri/munder-difflin/releases/latest). Install it,
+the [latest release](https://github.com/Chafiq48/munder-difflin-community/releases/latest). Install it,
 open it, and the wizard takes you the rest of the way. You do not need Node, a toolchain, or this
 repository.
 
@@ -318,7 +323,8 @@ Everything below is for contributors and for people who want to run an unrelease
 - At least one supported agent CLI on your `PATH` — **[Claude Code](https://claude.com/claude-code)**
   (`claude`, the default), **Antigravity** (`agy`), **OpenAI Codex** (`codex`), **xAI Grok** (`grok`),
   **Kimi Code** (`kimi`), **Gemini CLI** (`gemini`), **Qwen** (`qwen`), **OpenCode** (`opencode`),
-  **Crush** (`crush`), **pi.dev** (`pi`), **GitHub Copilot** (`copilot`), or **Cursor** (`cursor-agent`).
+  **Crush** (`crush`), **pi.dev** (`pi`), **GitHub Copilot** (`copilot`), **Cursor** (`cursor-agent`),
+  or **Muse Code** (`muse`).
   Most missing CLIs self-heal: the harness runs the installer in the
   terminal and continues into the new binary.
 - *Optional:* **your own API keys and local LLMs** in **Settings → AI Engines** (Ollama / LM Studio / vLLM).
@@ -327,8 +333,8 @@ Everything below is for contributors and for people who want to run an unrelease
 ### Install & run
 
 ```bash
-git clone https://github.com/chaitanyagiri/munder-difflin.git
-cd munder-difflin
+git clone https://github.com/Chafiq48/munder-difflin-community.git
+cd munder-difflin-community
 npm install        # postinstall rebuilds node-pty against Electron's ABI
 npm run dev        # launches the Electron app with hot reload
 ```
@@ -399,7 +405,7 @@ first areas: wiring real hook events, the add-agent flow, the config drawer, and
 Questions, bugs, or want to show off your office? Join the Discord: **<https://discord.gg/SEDzP5ZPk5>**. Add your Discord handle to a PR and you'll get the `employee of the month` role when it merges.
 
 **Looking for somewhere to start?** The
-[`good first issue`](https://github.com/chaitanyagiri/munder-difflin/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
+[`good first issue`](https://github.com/Chafiq48/munder-difflin-community/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
 list is kept stocked with small, self contained work that has a clear finish line.
 
 **Everyone whose code is in Munder Difflin is listed in [`CONTRIBUTORS.md`](./CONTRIBUTORS.md).**
@@ -409,7 +415,7 @@ updates on its own, so you appear without having to ask. It also names the contr
 and not theirs to explain.
 
 <a href="./CONTRIBUTORS.md">
-  <img src="https://contrib.rocks/image?repo=chaitanyagiri/munder-difflin" alt="Munder Difflin contributors">
+  <img src="https://contrib.rocks/image?repo=Chafiq48/munder-difflin-community" alt="Munder Difflin Community contributors">
 </a>
 
 ## Telemetry

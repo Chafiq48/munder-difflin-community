@@ -1,8 +1,8 @@
 /**
  * Agent providers — the CLI a worker runs on. The app is no longer Claude-only:
  * a worker can run Claude Code, the OpenAI Codex CLI (`codex`), Kimi Code
- * (`kimi`), xAI Grok (`grok`), the Antigravity CLI (`agy`, Gemini models), or
- * any custom command.
+ * (`kimi`), xAI Grok (`grok`), the Antigravity CLI (`agy`, Gemini models),
+ * Muse Code (`muse`, Muse Spark), or any custom command.
  * Each provider declares how to build its spawn command (model/auto-mode flags) and
  * whether it accepts the hive's Claude-specific identity injection
  * (`--append-system-prompt` + `--settings`).
@@ -34,6 +34,7 @@ export type AgentProvider =
   | 'pi'
   | 'copilot'
   | 'cursor'
+  | 'muse'
   | 'custom';
 
 /** Structured descriptor for how a NON-hiveAware provider gets hive lifecycle
@@ -565,6 +566,32 @@ export const AGENT_PROVIDER_PRESETS: AgentProviderPreset[] = [
     docsUrl: 'https://cursor.com/docs/cli/install'
   },
   {
+    // Muse Code — Meta's local terminal agent for Muse Spark. The CLI accepts
+    // an optional positional prompt, so the hive protocol can be delivered as
+    // the first turn without inventing a Muse-specific prompt flag.
+    //
+    // Muse has its own session protocol (`muse serve`), but this first adapter
+    // deliberately uses the stable interactive CLI surface. Until the MSP
+    // bridge is implemented, it is a worker-only provider: live inbox delivery
+    // must not be advertised when no lifecycle drain is wired.
+    id: 'muse',
+    label: 'Muse Spark · Muse Code',
+    defaultCommand: 'muse',
+    commandGroups: [],
+    autoModeFlag: '--approval-mode never --trust-workspace',
+    autoFlag: '--approval-mode never --trust-workspace',
+    autoStanceTokens: ['--approval-mode', '--trust-workspace', '--disable-approval'],
+    supportsModel: true,
+    modelFlag: '--model',
+    hiveAware: false,
+    canReceiveInbox: false,
+    positionalInitialPrompt: true,
+    // Muse Code is installed independently by Meta; keep the missing-engine
+    // path honest until the vendor's installer command is stable enough to run
+    // unattended from this app.
+    docsUrl: 'https://dev.meta.ai/'
+  },
+  {
     id: 'custom',
     label: 'Custom',
     defaultCommand: '',
@@ -591,6 +618,7 @@ export function isAgentProvider(value: unknown): value is AgentProvider {
     value === 'pi' ||
     value === 'copilot' ||
     value === 'cursor' ||
+    value === 'muse' ||
     value === 'custom'
   );
 }
@@ -645,6 +673,7 @@ export function inferAgentProvider(command: string | undefined, explicit?: unkno
   // Cursor ships as `cursor-agent`; `agent` is a shorter alias (generic name — check last).
   if (bin === 'cursor-agent') return 'cursor';
   if (bin === 'agent') return 'cursor';
+  if (bin === 'muse') return 'muse';
   if (bin === 'claude' || !bin) return 'claude';
   return 'custom';
 }

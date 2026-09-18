@@ -106,6 +106,12 @@ const SHIPPED = {
     ["claude-opus-4-8-high", "Opus 4.8 1M"],
     ["claude-sonnet-5-thinking-high", "Sonnet 5 1M Thinking"]
   ],
+  muse: [
+    [undefined, "CLI default"],
+    ["muse-spark-1.3", "Muse Spark 1.3"],
+    ["muse-spark-1.2", "Muse Spark 1.2"],
+    ["muse-spark-1.1", "Muse Spark 1.1"]
+  ],
 };
 
 /** A stand-in catalog: the real one is deliberately all-unbounded (the port had
@@ -149,7 +155,7 @@ test('the catalog is the schema config.ts expects', () => {
   assert.deepEqual(
     Object.keys(catalog.providers).sort(),
     ['antigravity', 'claude', 'copilot', 'codex', 'crush', 'cursor', 'custom',
-      'gemini', 'grok', 'kimi', 'opencode', 'pi', 'qwen'].sort()
+      'gemini', 'grok', 'kimi', 'muse', 'opencode', 'pi', 'qwen'].sort()
   );
 });
 

@@ -79,6 +79,19 @@ test('provider commands use matching models and equivalent bypass modes', () => 
     buildSpawnCommand(autoConfig, 'pro', 'gemini'),
     'gemini --model pro --approval-mode=yolo'
   );
+  assert.equal(
+    buildSpawnCommand(autoConfig, 'muse-spark-1.3', 'muse'),
+    'muse --model muse-spark-1.3 --approval-mode never --trust-workspace'
+  );
+});
+
+test('Muse is selectable as a worker and offers the Spark model catalog', () => {
+  assert.equal(isAgentProvider('muse'), true);
+  assert.deepEqual(
+    modelsForProvider('muse').map((model) => model.id),
+    [undefined, 'muse-spark-1.3', 'muse-spark-1.2', 'muse-spark-1.1']
+  );
+  assert.equal(providerPreset('muse').canReceiveInbox, false);
 });
 
 test('model picker options stay provider-specific', () => {
@@ -135,7 +148,7 @@ test('onboarding lists every engine — orchestrator-capable first, workers-only
     modelProvidersForAgent(true).map((preset) => preset.id),
     'selectable rows are exactly the god-eligible engines, same order'
   );
-  assert.deepEqual(workersOnly.map((preset) => preset.id), ['kimi', 'copilot']);
+  assert.deepEqual(workersOnly.map((preset) => preset.id), ['kimi', 'copilot', 'muse']);
   assert.ok(!eligible.concat(workersOnly).some((preset) => preset.id === 'custom'));
 });
 
@@ -149,6 +162,6 @@ test('God only sees providers that can drain hive inbox messages', () => {
   );
   assert.deepEqual(
     modelProvidersForAgent(false).map((preset) => preset.id),
-    ['claude', 'codex', 'grok', 'kimi', 'gemini', 'antigravity', 'qwen', 'opencode', 'crush', 'pi', 'copilot', 'cursor']
+    ['claude', 'codex', 'grok', 'kimi', 'gemini', 'antigravity', 'qwen', 'opencode', 'crush', 'pi', 'copilot', 'cursor', 'muse']
   );
 });

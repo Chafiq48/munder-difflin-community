@@ -58,7 +58,7 @@ test('each provider receives only its supported compaction syntax', () => {
   assert.equal(compactionCommandForProvider('pi', ''), '/compact');
 
   // No command we can trust → no keystrokes at all.
-  for (const p of ['antigravity', 'crush', 'copilot', 'cursor', 'custom']) {
+  for (const p of ['antigravity', 'crush', 'copilot', 'cursor', 'muse', 'custom']) {
     assert.equal(compactionCommandForProvider(p), null, p);
   }
 });
@@ -131,6 +131,7 @@ test('provider readiness policies allow each TUI to settle', () => {
   assert.equal(terminalReadySettleMs('codex'), 500);
   assert.equal(terminalReadySettleMs('grok'), 500);
   assert.equal(terminalReadySettleMs('kimi'), 650);
+  assert.equal(terminalReadySettleMs('muse'), 500);
 });
 
 test('continuous TUI repainting cannot block terminal readiness', () => {
