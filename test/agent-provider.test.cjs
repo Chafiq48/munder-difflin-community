@@ -88,6 +88,19 @@ test('cursor preset is interactive (no -p), uses force+trust auto flags, types s
   assert.strictEqual(ap.bridgeOf('cursor'), undefined, 'no hook/proxy bridge yet');
 });
 
+test('muse is a first-class worker provider for Muse Spark', () => {
+  assert.ok(ap.isAgentProvider('muse'), 'isAgentProvider("muse")');
+  assert.strictEqual(ap.inferAgentProvider('muse --model muse-spark-1.3'), 'muse');
+  const p = ap.providerPreset('muse');
+  assert.strictEqual(p.defaultCommand, 'muse', 'default command binary');
+  assert.strictEqual(p.modelFlag, '--model', 'model flag');
+  assert.strictEqual(p.positionalInitialPrompt, true, 'hive seed rides as the initial prompt');
+  assert.strictEqual(ap.autoModeFlagForProvider('muse'), '--approval-mode never --trust-workspace');
+  assert.strictEqual(p.hiveAware, false, 'Muse does not use Claude-only flags');
+  assert.strictEqual(ap.canReceiveInbox('muse'), false, 'MSP lifecycle bridge is not wired yet');
+  assert.strictEqual(ap.bridgeOf('muse'), undefined, 'no unverified lifecycle bridge');
+});
+
 test('codex preset still resolves (no regression)', () => {
   assert.strictEqual(ap.inferAgentProvider('codex'), 'codex');
   assert.strictEqual(ap.providerPreset('codex').defaultCommand, 'codex');

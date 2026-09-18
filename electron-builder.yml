@@ -1,6 +1,6 @@
-appId: in.munderdiffl.app
-productName: Munder Difflin
-copyright: Copyright © 2026 Chaitanya Giri
+appId: com.chafiq48.munder-difflin-community
+productName: Munder Difflin Community
+copyright: Copyright © 2026 Munder Difflin Community contributors
 
 # Where electron-updater looks for new versions (latest*.yml + assets on GitHub
 # releases). The release workflow still uploads assets itself (--publish never);
@@ -8,8 +8,8 @@ copyright: Copyright © 2026 Chaitanya Giri
 # knows which repo to poll.
 publish:
   provider: github
-  owner: chaitanyagiri
-  repo: munder-difflin
+  owner: Chafiq48
+  repo: munder-difflin-community
 
 # Bake the update toast's "What's new" list straight into latest*.yml.
 #
@@ -38,7 +38,7 @@ afterSign: build/notarize.cjs
 # Register the munderdifflin:// URL scheme (shareable-hires deep link) in the
 # packaged app: CFBundleURLTypes on macOS, registry entries via NSIS on Windows.
 protocols:
-  - name: Munder Difflin
+  - name: Munder Difflin Community
     schemes:
       - munderdifflin
 
@@ -149,7 +149,7 @@ nsis:
   perMachine: false
   allowToChangeInstallationDirectory: true
   artifactName: Munder-Difflin-${version}-win-x64-setup.exe
-  shortcutName: Munder Difflin
+  shortcutName: Munder Difflin Community
 
 portable:
   artifactName: Munder-Difflin-${version}-win-x64-portable.exe

@@ -1,10 +1,10 @@
 <!-- RELEASE RUNNER, REQUIRED BEFORE YOU TAG: run RELEASE-CHECKLIST.md. Rehearse the updater on 0.4.6-rc.1 -> 0.4.7-rc.1 prereleases and pass the fault-injection checks BEFORE tagging the real release. This comment is not rendered in the published notes. -->
-# Munder Difflin v0.4.6
+# Munder Difflin Community v0.4.6
 
-**A local hive of Claude Code, Antigravity, Codex, Gemini, Cursor, Grok & Copilot agents that run themselves.**
+**A local hive of Claude Code, Antigravity, Codex, Gemini, Cursor, Grok, Copilot, and Muse agents that run themselves.**
 Messaging, routing, and remembering, coordinated by your clone, Michael, who you talk to. Local-first and open source.
 
-### → [**munderdiffl.in**](https://munderdiffl.in/) · see it in action, then grab a build below
+### → [**community fork repository**](https://github.com/Chafiq48/munder-difflin-community) · see the source, then grab a build below
 
 ---
 
@@ -37,13 +37,12 @@ hardened. Plus the Settings rework, an IME fix for CJK typing, and 16 community 
 - **The ASK ME card renders markdown.** Questions with emphasis, bullets, `code`, tables and links
   now render instead of showing their raw asterisks.
 
-### A note on Pro
+### A note on this community fork
 
-v0.5.0 launches with a Pro version alongside the community version. Community stays free, stays
-open, and keeps getting updates. Pro ships with new features and integrations, with more posted
-throughout the year, and it stays ahead of Community, for power users who want the full potential
-of coding agents and agent harnesses. The Pro roadmap also includes a mobile app. The first 100 people on the
-Founders' Wall get a month of Pro free, then 50% off the annual plan.
+This fork keeps the desktop app local-first and open: there is no account requirement, paid tier,
+or remote entitlement check in the application. Your chosen CLI engines still use their own
+credentials, subscriptions, API keys, or local models, and any provider-side usage costs remain
+the responsibility of the user.
 
 ### Thanks
 
@@ -165,7 +164,7 @@ the app's own pixel art, on the brand yellow, looking straight back at you.
   redrawing of another.
 - **The SVG is the source of truth.** The mark is authored as pure vector — every pixel of the
   sprite is a rect, with no fonts, no gradients and no filters — and every raster in `build/`
-  and `docs/` is generated from it by [`tools/make-logo.cjs`](https://github.com/chaitanyagiri/munder-difflin/blob/main/tools/make-logo.cjs).
+  and `docs/` is generated from it by [`tools/make-logo.cjs`](https://github.com/Chafiq48/munder-difflin-community/blob/main/tools/make-logo.cjs).
   The old icon depended on the Lobster webfont being installed to render correctly.
 - **Icons are native at every size.** A real multi-resolution `.icns` (16→1024, with the macOS
   drop shadow) and a `.ico` carrying six sizes, plus a 32px favicon and a 180px apple-touch-icon,
@@ -186,7 +185,7 @@ Munder Difflin now sends a **small set of anonymous usage events** (app opened, 
 feature used) so we can tell whether features are actually used. It is built the way an
 open-source project should build it:
 
-- **[TELEMETRY.md](https://github.com/chaitanyagiri/munder-difflin/blob/main/TELEMETRY.md) is the
+- **[TELEMETRY.md](https://github.com/Chafiq48/munder-difflin-community/blob/main/TELEMETRY.md) is the
   complete contract.** Every event and property is listed there, and the code enforces that list
   as a hard allowlist — anything not in the table cannot be sent. No prompts, no transcripts, no
   file paths, no repo names, no identifiers. Events are PostHog *anonymous events* (no person
@@ -250,7 +249,7 @@ works around the clock — the app still called it a "GOD agent." Now they match
 - **0.3.2** — Realtime Michael: a voice channel to the GOD orchestrator.
 - **0.3.1** — three more engines: OpenCode, Crush, and pi.dev.
 
-Full history in the [CHANGELOG](https://github.com/chaitanyagiri/munder-difflin/blob/main/CHANGELOG.md).
+Full history in the [CHANGELOG](https://github.com/Chafiq48/munder-difflin-community/blob/main/CHANGELOG.md).
 
 
 ---
@@ -297,28 +296,28 @@ Apple Silicon and Intel.
 ### 🍎 macOS
 | Build | File |
 |---|---|
-| Universal (Apple Silicon + Intel) | [`Munder-Difflin-0.4.6-mac-universal.dmg`](https://github.com/chaitanyagiri/munder-difflin/releases/latest/download/Munder-Difflin-0.4.6-mac-universal.dmg) |
+| Universal (Apple Silicon + Intel) | [`Munder-Difflin-0.4.6-mac-universal.dmg`](https://github.com/Chafiq48/munder-difflin-community/releases/latest/download/Munder-Difflin-0.4.6-mac-universal.dmg) |
 
 ### 🪟 Windows
 | Build | File |
 |---|---|
-| Installer (x64), *recommended* | [`Munder-Difflin-0.4.6-win-x64-setup.exe`](https://github.com/chaitanyagiri/munder-difflin/releases/latest/download/Munder-Difflin-0.4.6-win-x64-setup.exe) |
-| Portable (x64, no install) | [`Munder-Difflin-0.4.6-win-x64-portable.exe`](https://github.com/chaitanyagiri/munder-difflin/releases/latest/download/Munder-Difflin-0.4.6-win-x64-portable.exe) |
+| Installer (x64), *recommended* | [`Munder-Difflin-0.4.6-win-x64-setup.exe`](https://github.com/Chafiq48/munder-difflin-community/releases/latest/download/Munder-Difflin-0.4.6-win-x64-setup.exe) |
+| Portable (x64, no install) | [`Munder-Difflin-0.4.6-win-x64-portable.exe`](https://github.com/Chafiq48/munder-difflin-community/releases/latest/download/Munder-Difflin-0.4.6-win-x64-portable.exe) |
 
 ### 🐧 Linux
 | Build | File |
 |---|---|
-| AppImage (x86_64) | [`Munder-Difflin-0.4.6-linux-x86_64.AppImage`](https://github.com/chaitanyagiri/munder-difflin/releases/latest/download/Munder-Difflin-0.4.6-linux-x86_64.AppImage) |
+| AppImage (x86_64) | [`Munder-Difflin-0.4.6-linux-x86_64.AppImage`](https://github.com/Chafiq48/munder-difflin-community/releases/latest/download/Munder-Difflin-0.4.6-linux-x86_64.AppImage) |
 
 ### 📦 Source
-[Source code (zip)](https://github.com/chaitanyagiri/munder-difflin/archive/refs/tags/v0.4.6.zip) ·
-[Source code (tar.gz)](https://github.com/chaitanyagiri/munder-difflin/archive/refs/tags/v0.4.6.tar.gz)
+[Source code (zip)](https://github.com/Chafiq48/munder-difflin-community/archive/refs/tags/v0.4.6.zip) ·
+[Source code (tar.gz)](https://github.com/Chafiq48/munder-difflin-community/archive/refs/tags/v0.4.6.tar.gz)
 
-> **Verify your download:** [`SHA256SUMS.txt`](https://github.com/chaitanyagiri/munder-difflin/releases/latest/download/SHA256SUMS.txt) — then `shasum -a 256 -c SHA256SUMS.txt` (macOS/Linux) or `Get-FileHash` (Windows).
+> **Verify your download:** [`SHA256SUMS.txt`](https://github.com/Chafiq48/munder-difflin-community/releases/latest/download/SHA256SUMS.txt) — then `shasum -a 256 -c SHA256SUMS.txt` (macOS/Linux) or `Get-FileHash` (Windows).
 
 > The filenames above carry a version number, so they only resolve while this is the
 > latest release. If a link 404s you are reading an old release page — grab the current
-> build from the [**releases page**](https://github.com/chaitanyagiri/munder-difflin/releases/latest),
+> build from the [**releases page**](https://github.com/Chafiq48/munder-difflin-community/releases/latest),
 > which is always right.
 
 ---
@@ -347,8 +346,8 @@ Apple Silicon and Intel.
 
 ## 🛠 Build from source
 ```bash
-git clone https://github.com/chaitanyagiri/munder-difflin.git
-cd munder-difflin
+git clone https://github.com/Chafiq48/munder-difflin-community.git
+cd munder-difflin-community
 npm install        # rebuilds node-pty for Electron
 npm run dev        # launches the app with hot reload
 ```
@@ -365,15 +364,15 @@ To produce installers yourself: `npm run dist` (current OS), or `dist:mac` / `di
 - **GOD orchestrator + hive** — one agent you talk to routes work to specialists and stays autonomous, escalating only critical items (spend, destructive ops, scope) to you natively, through human-in-the-loop prompts. It can also spawn an ephemeral worker straight from Slack and tear it down safely.
 - **Plugs into your setup** — your subscription, settings, skills, and MCP servers, plus an integrations registry with a write-only secret broker; `/remote-control` reaches the whole floor from your phone.
 
-Full notes in the [CHANGELOG](https://github.com/chaitanyagiri/munder-difflin/blob/main/CHANGELOG.md).
+Full notes in the [CHANGELOG](https://github.com/Chafiq48/munder-difflin-community/blob/main/CHANGELOG.md).
 
 ---
 
 ## Links
 [Website](https://munderdiffl.in/) ·
-[Repo](https://github.com/chaitanyagiri/munder-difflin) ·
-[Issues](https://github.com/chaitanyagiri/munder-difflin/issues) ·
-[Contribute](https://github.com/chaitanyagiri/munder-difflin/blob/main/CONTRIBUTING.md) ·
+[Repo](https://github.com/Chafiq48/munder-difflin-community) ·
+[Issues](https://github.com/Chafiq48/munder-difflin-community/issues) ·
+[Contribute](https://github.com/Chafiq48/munder-difflin-community/blob/main/CONTRIBUTING.md) ·
 [Become a patron](https://razorpay.me/@munderdifflinfund)
 
 MIT-licensed. An affectionate parody — not affiliated with NBC's *The Office* or Dunder Mifflin.

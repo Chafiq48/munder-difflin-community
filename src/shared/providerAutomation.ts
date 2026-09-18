@@ -144,6 +144,11 @@ const CONTEXT_COMMANDS: Record<AgentProvider, ProviderContextCommands> = {
   // auto-compact. Revisit when a shipped command table is transcribed.
   cursor: NO_CONTEXT_COMMANDS,
 
+  // Muse Code's slash-command surface is not yet part of the stable adapter.
+  // Keep compaction and clearing disabled until the MSP bridge can expose a
+  // verified session operation instead of typing guesses into the TUI.
+  muse: NO_CONTEXT_COMMANDS,
+
   // An arbitrary user binary. We cannot know its command surface, and guessing
   // means typing slashes into someone's unknown REPL.
   custom: NO_CONTEXT_COMMANDS
@@ -232,6 +237,7 @@ export function terminalReadySettleMs(provider: AgentProvider): number {
     case 'grok': return 500;
     case 'gemini': return 500;
     case 'codex': return 500;
+    case 'muse': return 500;
     default: return 400;
   }
 }

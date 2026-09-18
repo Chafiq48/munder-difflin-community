@@ -21,7 +21,7 @@ This is an early prototype. Security fixes target the `main` branch only.
 Please **do not** open a public issue for security problems.
 
 - Use GitHub's **private vulnerability reporting**: the *Security → Report a
-  vulnerability* tab on https://github.com/chaitanyagiri/munder-difflin, **or**
+  vulnerability* tab on https://github.com/Chafiq48/munder-difflin-community, **or**
 - Email **girichaitanya11@gmail.com** with a description, reproduction steps, and
   impact.
 

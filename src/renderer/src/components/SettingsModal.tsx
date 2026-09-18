@@ -974,10 +974,9 @@ export function SettingsModal({ config, onClose, initialSection }: SettingsModal
                   {/* GENERAL */}
                   {activeSection === 'General' && (
                     <>
-                      {/* Who you are and what this install is — version, plan,
-                          sponsor, and the app-level actions that belong to none
-                          of the settings below. Slots for a future subscription
-                          and a sponsor live here; both render nothing until set. */}
+                      {/* Who you are and what this install is — version, local
+                          runtime, sponsor, and the app-level actions that belong
+                          to none of the settings below. */}
                       <SettingsHeroCard />
 
                       <div style={{ height: 1, background: 'var(--cth-ink-300)' }} />
