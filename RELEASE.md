@@ -1,5 +1,5 @@
-<!-- RELEASE RUNNER, REQUIRED BEFORE YOU TAG: run RELEASE-CHECKLIST.md. Rehearse the updater on 0.4.8-rc.1 -> 0.4.9-rc.1 prereleases and pass the fault-injection checks BEFORE tagging the real release. This comment is not rendered in the published notes. -->
-# Munder Difflin Community v0.4.8
+<!-- RELEASE RUNNER, REQUIRED BEFORE YOU TAG: run RELEASE-CHECKLIST.md. Rehearse the updater on 0.4.9-rc.1 -> 0.5.0-rc.1 prereleases and pass the fault-injection checks BEFORE tagging the real release. This comment is not rendered in the published notes. -->
+# Munder Difflin Community v0.4.9
 
 **A local hive of Claude Code, Antigravity, Codex, Gemini, Cursor, Grok, Copilot, and Muse agents that run themselves.**
 Messaging, routing, and remembering, coordinated by your clone, Michael, who you talk to. Local-first and open source.
@@ -8,7 +8,7 @@ Messaging, routing, and remembering, coordinated by your clone, Michael, who you
 
 ---
 
-## What's new in 0.4.8
+## What's new in 0.4.9
 
 **The release that speaks your language and updates itself.** The interface now runs in Chinese and
 Arabic, the auto-updater downloads and installs a new build end to end, fonts ship inside the app so
@@ -58,7 +58,7 @@ reviewed a pull request or filed the bug that led to one.
 
 <!-- drop -->
 <div class="drop">
-  <p class="eyebrow">Munder Difflin Community 0.4.8</p>
+  <p class="eyebrow">Munder Difflin Community 0.4.9</p>
   <h1>Speaks your language. Updates itself.</h1>
   <p class="lede">The interface now runs in Chinese and Arabic, the updater installs a new build end
   to end, and the fonts ship inside the app so a blocked network never leaves you on a blank screen.</p>
@@ -296,22 +296,22 @@ Apple Silicon and Intel.
 ### 🍎 macOS
 | Build | File |
 |---|---|
-| Universal (Apple Silicon + Intel) | [`Munder-Difflin-0.4.8-mac-universal.dmg`](https://github.com/Chafiq48/munder-difflin-community/releases/latest/download/Munder-Difflin-0.4.8-mac-universal.dmg) |
+| Universal (Apple Silicon + Intel) | [`Munder-Difflin-0.4.9-mac-universal.dmg`](https://github.com/Chafiq48/munder-difflin-community/releases/latest/download/Munder-Difflin-0.4.9-mac-universal.dmg) |
 
 ### 🪟 Windows
 | Build | File |
 |---|---|
-| Installer (x64), *recommended* | [`Munder-Difflin-0.4.8-win-x64-setup.exe`](https://github.com/Chafiq48/munder-difflin-community/releases/latest/download/Munder-Difflin-0.4.8-win-x64-setup.exe) |
-| Portable (x64, no install) | [`Munder-Difflin-0.4.8-win-x64-portable.exe`](https://github.com/Chafiq48/munder-difflin-community/releases/latest/download/Munder-Difflin-0.4.8-win-x64-portable.exe) |
+| Installer (x64), *recommended* | [`Munder-Difflin-0.4.9-win-x64-setup.exe`](https://github.com/Chafiq48/munder-difflin-community/releases/latest/download/Munder-Difflin-0.4.9-win-x64-setup.exe) |
+| Portable (x64, no install) | [`Munder-Difflin-0.4.9-win-x64-portable.exe`](https://github.com/Chafiq48/munder-difflin-community/releases/latest/download/Munder-Difflin-0.4.9-win-x64-portable.exe) |
 
 ### 🐧 Linux
 | Build | File |
 |---|---|
-| AppImage (x86_64) | [`Munder-Difflin-0.4.8-linux-x86_64.AppImage`](https://github.com/Chafiq48/munder-difflin-community/releases/latest/download/Munder-Difflin-0.4.8-linux-x86_64.AppImage) |
+| AppImage (x86_64) | [`Munder-Difflin-0.4.9-linux-x86_64.AppImage`](https://github.com/Chafiq48/munder-difflin-community/releases/latest/download/Munder-Difflin-0.4.9-linux-x86_64.AppImage) |
 
 ### 📦 Source
-[Source code (zip)](https://github.com/Chafiq48/munder-difflin-community/archive/refs/tags/v0.4.8.zip) ·
-[Source code (tar.gz)](https://github.com/Chafiq48/munder-difflin-community/archive/refs/tags/v0.4.8.tar.gz)
+[Source code (zip)](https://github.com/Chafiq48/munder-difflin-community/archive/refs/tags/v0.4.9.zip) ·
+[Source code (tar.gz)](https://github.com/Chafiq48/munder-difflin-community/archive/refs/tags/v0.4.9.tar.gz)
 
 > **Verify your download:** [`SHA256SUMS.txt`](https://github.com/Chafiq48/munder-difflin-community/releases/latest/download/SHA256SUMS.txt) — then `shasum -a 256 -c SHA256SUMS.txt` (macOS/Linux) or `Get-FileHash` (Windows).
 
